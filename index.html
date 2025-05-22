@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const ref = new URLSearchParams(location.search).get("ref");
+
+    const urls = {
+      Bangladesh: "https://telegra.ph/Bangladesh-Number-05-21",
+      India: "https://example.com/india",
+      Pakistan: "https://example.com/pakistan"
+      // Add more countries as needed
+    };
+
+    if (ref && urls[ref]) location.href = urls[ref];
+  </script>
+</head>
+<body></body>
+</html>
